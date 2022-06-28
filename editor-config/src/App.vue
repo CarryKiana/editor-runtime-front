@@ -23,15 +23,7 @@ const data = ref({
   items: []
 })
 
-const runtimeUrl: string = '/runtime/vue3/playground.html'
-
-const propsConfigs: any[] = [
-  // 组件属性列表
-]
-
-const propsValues: any[] = [
-  // 组件默认值
-]
+const runtimeUrl: string = '/playground/index.html'
 
 // 组件列表
 const componentGroupList = ref([
@@ -46,75 +38,26 @@ const componentGroupList = ref([
     ]
   }
 ])
-// 渲染
-const render = ({ renderer }: any) => {
-
-  const root = window.document.createElement('div')
-
-  if (!page) return root
-
-  const { width = 375, height = 1700 } = page.value.style || {}
-
-  root.id = `${page.value.id}`
-  root.style.cssText = `
-    widrh: ${ width }px;
-    height: ${ height }px;
-  `
-  console.log(page)
-  createApp({
-    template: '<p v-for="node in config.items" :key="node.id" :id="node.id">hello world</p>',
-    props: ['config'],
-  },{
-    config: page.value,
-  }).mount(root)
-
-  renderer.on('onload', () => {
-    const style = window.document.createElement('style')
-    // 隐藏滚动条，重置默认样式
-    style.innerHTML = `
-      body {
-        overflow: auto;
-      }
-
-      html,body {
-        height: 100%; margin: 0;padding: 0;
-      }
-      
-      html::-webkit-scrollbar {
-        width: 0 !important;
-        display: none;
-      }
-    `;
-    renderer.iframe.contentDocument.head.appendChild(style);
-
-    renderer.iframe.contentWindow.magic?.onPageElUpdate(root);
-    renderer.iframe.contentWindow.magic?.onRuntimeReady({});
-  })
-
-  return root;
-}
 </script>
 
 <template>
-    <!-- :runtime-url="runtimeUrl" -->
   <m-editor
     v-model="data"
-    :menu="menu"
-    :props-configs="propsConfigs"
-    :props-values="propsValues"
+    :runtime-url="runtimeUrl"
     :component-group-list="componentGroupList"
-    :render="render"
   ></m-editor>
 </template>
 
 <style>
 #app {
-  width: 100%;
+  overflow: auto;
   height: 100%;
+  margin: 0;
+  padding: 0;
   display: flex;
 }
-.m-editor {
-  flex: 1;
-  height: 100%;
+#app::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
 }
 </style>
