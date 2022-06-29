@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import { computed, createApp, ref } from 'vue'
-import { editorService } from '@tmagic/editor';
-import type { MPage } from '@tmagic/schema';
+import { editorService, MoveableOptions, TMagicEditor } from '@tmagic/editor';
+import { MPage, NodeType } from '@tmagic/schema';
+import StageCore from '@tmagic/stage/dist/types/src/StageCore';
 // import StageCore from '@tmagic/stage/dist/types/src/StageCore';
 
 const page = computed(() => editorService.get<MPage>('page'));
@@ -38,6 +39,21 @@ const componentGroupList = ref([
     ]
   }
 ])
+
+const editor = ref<InstanceType<typeof TMagicEditor>>();
+
+const moveableOptions = (core?: StageCore): MoveableOptions => {
+        const options: MoveableOptions = {};
+        const id = core?.dr?.target?.id;
+        if (!id || !editor.value) return options;
+        const node = editor.value.editorService.getNodeById(id);
+        if (!node) return options;
+        const isPage = node.type === NodeType.PAGE;
+        options.draggable = !isPage;
+        options.resizable = !isPage;
+        options.rotatable = !isPage;
+        return options;
+      }
 </script>
 
 <template>
@@ -45,6 +61,7 @@ const componentGroupList = ref([
     v-model="data"
     :runtime-url="runtimeUrl"
     :component-group-list="componentGroupList"
+    :moveable-options="moveableOptions"
   ></m-editor>
 </template>
 

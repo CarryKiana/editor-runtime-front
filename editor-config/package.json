@@ -10,8 +10,8 @@
   "dependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
-    "@tmagic/editor": "1.0.0-rc.13",
-    "@tmagic/form": "1.0.0-rc.13",
+    "@tmagic/editor": "1.0.1",
+    "@tmagic/form": "^1.0.1",
     "@types/node": "^18.0.0",
     "@vue/babel-plugin-jsx": "^1.1.1",
     "element-plus": "^2.2.6",

@@ -357,26 +357,26 @@
     "@daybrush/utils" "^1.4.0"
     framework-utils "^1.1.0"
 
-"@tmagic/core@1.0.0-rc.13":
-  version "1.0.0-rc.13"
-  resolved "https://registry.npmmirror.com/@tmagic/core/-/core-1.0.0-rc.13.tgz#184377a3af3cbd44042349316b6f2dbcac456ea4"
-  integrity sha512-xs5NbjZKlxLysdMebh2GMeD+bX6O2edIE8v+UuQtOgKTNb4jH3qqun53c5mkAgWLR48bqQfSoCad65En5siBdQ==
+"@tmagic/core@1.0.1":
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/@tmagic/core/-/core-1.0.0.tgz#0343d2f83a113e5649103f469e3e3fd2543256a2"
+  integrity sha512-giZdqnvQonAidQFqGQXz3S1+n8cdSvFb5uaQkoFwkzJ94SsEgsy0yPeas3PAN98a2QktYWOKnciesN2i3+BZ7g==
   dependencies:
-    "@tmagic/schema" "1.0.0-rc.13"
+    "@tmagic/schema" "1.0.0"
     events "^3.3.0"
 
-"@tmagic/editor@1.0.0-rc.13":
-  version "1.0.0-rc.13"
-  resolved "https://registry.npmmirror.com/@tmagic/editor/-/editor-1.0.0-rc.13.tgz#6e3ee633bb25b94352d8d504a34591aa61e83045"
-  integrity sha512-CLxSV3lp0aKd7vFfn1LmMOX9BfviGPRDtnzYvzE7/wXn/f1pIoiEkAlMxcX+ucqZXAKfUqb/vBGpsv9wzkS0LA==
+"@tmagic/editor@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/@tmagic/editor/-/editor-1.0.1.tgz#60f4a30cb298a5855e5f7ee955ca16f113ef1cbb"
+  integrity sha512-hdY/XrnkCvt8otY5xS2Vq+HTIIng3gRJb4HmWtOUJ+530BmYb18fQ0CVpStWysMj9p6ZWA3LkKzhQ2n8TYE4zQ==
   dependencies:
     "@babel/core" "^7.18.0"
     "@element-plus/icons" "0.0.11"
-    "@tmagic/core" "1.0.0-rc.13"
-    "@tmagic/form" "1.0.0-rc.13"
-    "@tmagic/schema" "1.0.0-rc.13"
-    "@tmagic/stage" "1.0.0-rc.13"
-    "@tmagic/utils" "1.0.0-rc.13"
+    "@tmagic/core" "1.0.1"
+    "@tmagic/form" "1.0.1"
+    "@tmagic/schema" "1.0.1"
+    "@tmagic/stage" "1.0.1"
+    "@tmagic/utils" "1.0.1"
     buffer "^6.0.3"
     color "^3.1.3"
     element-plus "^2.2.0"
@@ -388,44 +388,49 @@
     serialize-javascript "^6.0.0"
     vue "^3.2.0"
 
-"@tmagic/form@1.0.0-rc.13":
-  version "1.0.0-rc.13"
-  resolved "https://registry.npmmirror.com/@tmagic/form/-/form-1.0.0-rc.13.tgz#3b149c4ebfe1b2030834432bd3a9798715f05052"
-  integrity sha512-/KXfkG/OfeZqqBii5/eu5/ZGfDKstv2lS5S9XoMt4vvfXuBPaiFgXA/JlsNgIGnZrfQM0kPvxoIs0Rtli3L5qg==
+"@tmagic/form@1.0.1", "@tmagic/form@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/@tmagic/form/-/form-1.0.1.tgz#6b614acd94f18da9e072b2254fdb77ee70bcd3a0"
+  integrity sha512-gSsRye5go+6NE2lftV/l4tN2rQpvBLEJFK0UAtsTt/fBKgJagiN/kO/c97APNRrOmOMFPE6pMFPDh8mRWp4MQg==
   dependencies:
     "@element-plus/icons" "0.0.11"
-    "@tmagic/utils" "1.0.0-rc.13"
+    "@tmagic/utils" "1.0.1"
     element-plus "^2.2.0"
     lodash-es "^4.17.21"
     moment "^2.29.2"
     sortablejs "^1.14.0"
     vue "^3.2.0"
 
-"@tmagic/schema@1.0.0-rc.13":
-  version "1.0.0-rc.13"
-  resolved "https://registry.npmmirror.com/@tmagic/schema/-/schema-1.0.0-rc.13.tgz#40057ad25dd0cd205dc940acb8130c420eecb5eb"
-  integrity sha512-tr+AqOCPU0nKGy6uJKvAFWbRmAXndSnJv5NXRKPlED+dsZE/8tMNFsHcuWhynWLIFTAUmEQwzXz4VEvNnJvrdw==
+"@tmagic/schema@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/@tmagic/schema/-/schema-1.0.0.tgz#74552d7eab967bdad91e75be9f04cbbec206c143"
+  integrity sha512-ZJAkoyc+g5XshECQfSrOObbQF2IK5Uy4iWBcdYDkgDfJtbWhhgg5V54jn+2NYCH+4obKy+wFhWNzUGcRO9MiFQ==
 
-"@tmagic/stage@1.0.0-rc.13":
-  version "1.0.0-rc.13"
-  resolved "https://registry.npmmirror.com/@tmagic/stage/-/stage-1.0.0-rc.13.tgz#677940e79550cdda936c6c33e5310f10f37c3423"
-  integrity sha512-/khqiaCn90eQRGHn+Beu6sSRn0mm+C5ssC36lCWG6RlXnLNYaNiY1GHsB7zj7qUquHTXrD/+ifdYczkqTLdetw==
+"@tmagic/schema@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/@tmagic/schema/-/schema-1.0.1.tgz#46097251fef6d3beadb288aba06f287618404b6b"
+  integrity sha512-st5FrTnZL21a/eHhbFgVA96FV784FzlBHrPza7Ozswko/O4Lg5Daf7lvqY3agIlrj0J/JjWBlE6x6Ka8UQEE5w==
+
+"@tmagic/stage@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/@tmagic/stage/-/stage-1.0.1.tgz#484eb197573ac6cc54ade8e9985b205f34da01a7"
+  integrity sha512-TEkBTrTZnARmeRECGUZxBb2sRccuN5YrzL4NPKb3nX1Ezr9vF1XYJaO2F+7odDSuacHPjDZia1HigoJ+t5qPSg==
   dependencies:
     "@scena/guides" "^0.17.0"
-    "@tmagic/core" "1.0.0-rc.13"
-    "@tmagic/schema" "1.0.0-rc.13"
-    "@tmagic/utils" "1.0.0-rc.13"
+    "@tmagic/core" "1.0.1"
+    "@tmagic/schema" "1.0.1"
+    "@tmagic/utils" "1.0.1"
     events "^3.3.0"
     lodash-es "^4.17.21"
     moveable "^0.30.0"
     moveable-helper "^0.4.0"
 
-"@tmagic/utils@1.0.0-rc.13":
-  version "1.0.0-rc.13"
-  resolved "https://registry.npmmirror.com/@tmagic/utils/-/utils-1.0.0-rc.13.tgz#bbf694a1e5a38b1eafe023c67ba19f70719b401a"
-  integrity sha512-XOJBXUDLEKTmx6Rnty7Vo9vp6vOZjN3HCewo8Im5S0UAIXZzXdwW1ym674/FsCzzUukGu16ez2NykjtS6prjSA==
+"@tmagic/utils@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/@tmagic/utils/-/utils-1.0.1.tgz#cebf666003cb3caf041bb016648496b57853168c"
+  integrity sha512-r7XmJcMZ3DBIWteWrDUH+JnDoCMJGvJMb63EDqricdWhlKbb0JfnGlth6Xjugts9PXouiunMZO4A80HtNBgtoQ==
   dependencies:
-    "@tmagic/schema" "1.0.0-rc.13"
+    "@tmagic/schema" "1.0.1"
     moment "^2.29.2"
 
 "@types/lodash-es@^4.17.6":
