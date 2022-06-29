@@ -21,10 +21,14 @@ const path = require("path")
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   server: {
     headers: {
       'Access-Control-Allow-Origin': '*'
-    }
+    },
+    host: true,
+    port: 8078,
+    cors:{ origin: '^' }
   },
   resolve: {
     alias: {
